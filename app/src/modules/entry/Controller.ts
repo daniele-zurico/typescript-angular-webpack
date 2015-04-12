@@ -1,23 +1,41 @@
 /**
  * Created by danielezurico on 12/04/15.
  */
-export class Greeter {
+
+import IUser = require("IUser");
+
+class Person implements IUser{
+    constructor(){}
+    set name(name:string){
+        this.name = name;
+    }
+    get name() {
+        return name;
+    }
+    set surname(surname:string){
+        this.surname = surname;
+    }
+    get surname(){
+        return this.surname;
+    }
+}
+
+export class Greeter extends Person{
     greeting:string;
 
     constructor() {
         this.greeting = "From the controller as TypeScript 1";
+        super();
     }
 
-    private hello():string {
-        return this.greeting = "hello";
+    public hello():string {
+        this.name = "Daniele";
+        this.greeting = this.name;
+        return this.greeting;
     }
 
     public hello2():string {
         return this.greeting = "hello2";
     }
-}
-
-var test: Greeter = new Greeter();
-//console.log(test.hello());    this will produce an error but you are able to call from html :(
-console.log(test.hello2());
+};
 
