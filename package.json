@@ -1,0 +1,30 @@
+{
+  "name": "typescript-angular-webpack",
+  "version": "0.0.1",
+  "description": "This is a prototype to configurate webpack with angular and typescript",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daniele-zurico/typescript-angular-webpack.git"
+  },
+  "keywords": [
+    "Webpack",
+    "Angular",
+    "Typescript"
+  ],
+  "author": "Daniele Zurico",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniele-zurico/typescript-angular-webpack/issues"
+  },
+  "homepage": "https://github.com/daniele-zurico/typescript-angular-webpack",
+  "devDependencies": {
+    "component-resolver-webpack": "^0.3.0",
+    "typescript-loader": "^1.1.3",
+    "webpack": "^1.8.4",
+    "webpack-dev-server": "^1.8.0"
+  }
+}
