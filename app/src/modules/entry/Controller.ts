@@ -2,7 +2,7 @@
  * Created by danielezurico on 12/04/15.
  */
 
-import IUser = require("IUser");
+import IUser = require("./IUser");
 
 class Person implements IUser{
     constructor(){}
