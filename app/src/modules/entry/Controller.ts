@@ -3,14 +3,21 @@
  */
 export class Greeter {
     greeting:string;
-    $location;
 
-    constructor($location) {
-        this.$location = $location;
+    constructor() {
         this.greeting = "From the controller as TypeScript 1";
     }
 
     private hello() {
-        this.greeting = "hello";
+        return this.greeting = "hello";
+    }
+
+    public hello2() {
+        return this.greeting = "hello2";
     }
 }
+
+var test: Greeter = new Greeter();
+//console.log(test.hello());    this will produce an error but you are able to call from html :(
+console.log(test.hello2());
+
