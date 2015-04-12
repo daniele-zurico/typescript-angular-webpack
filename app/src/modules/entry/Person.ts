@@ -1,8 +1,9 @@
 /**
  * Created by danielezurico on 12/04/15.
  */
+import IUser = require("./IUser");
 
-export class Person{
+class Person implements IUser{
     constructor(){}
     set name(name:string){
         this.name = name;
@@ -17,3 +18,4 @@ export class Person{
         return this.surname;
     }
 }
+export = Person
