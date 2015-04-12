@@ -6,8 +6,8 @@ This is a template application to get you up and running with a solid implementa
 
 Requirements
 
-NodeJS >= v0.12.0
-NPM >= v2.5.1
+- NodeJS >= v0.12.0
+- NPM >= v2.5.1
 
 #Intallation
 Once the required software is installed (NodeJS, NPM) run the command:
