@@ -22,8 +22,8 @@ All your modules must be created inside the folder app/modules (i.e. app/modules
 #Starts a basic WebServer
 - npm start
 
-- If you need live reloading you can open your browser (I've tested with chrome) at the following address:
-    - http://localhost:8090/webpack-dev-server/app/src/index.html (the main advantage is that you can write the code in your editor and see the changes in your browser without reload it)
-     
+- The main advantage is that you can write the code in your editor and see the changes in your browser without reload it. Open your browser (I've tested with chrome) at the following address:
+    - http://localhost:8090/webpack-dev-server/app/src/index.html 
+         
 - otherwise:
     - http://localhost:8090/app/src/index.html
