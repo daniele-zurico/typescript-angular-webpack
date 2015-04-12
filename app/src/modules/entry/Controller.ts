@@ -8,11 +8,11 @@ export class Greeter {
         this.greeting = "From the controller as TypeScript 1";
     }
 
-    private hello() {
+    private hello():string {
         return this.greeting = "hello";
     }
 
-    public hello2() {
+    public hello2():string {
         return this.greeting = "hello2";
     }
 }
