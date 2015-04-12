@@ -11,6 +11,9 @@ This is a template application to get you up and running with a solid implementa
         - create a single output file: bundle.js
         - write your code without reload your browser
         - test (still missing)
+        - the compiled output has 2 files:
+            - dist/bundle.js --> our code
+            - vendor.bundle.js --> angular code and other dependencies
         
 
 #Requirements
