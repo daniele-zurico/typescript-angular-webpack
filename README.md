@@ -4,10 +4,20 @@
 
 This is a template application to get you up and running with a solid implementation and structure of an **AngularJS** single page app. The main point of this is to have **Typescript and Webpack** setup, run continuous testing in development mode with Testem and finally have an easy to use Packager that will package your application for deployment.
 
+    #Feature
+        - support typescript
+        - annotation: require your dependencies without write complete path: app/src/modules/entry/Controller.ts -> entry.Controller
+        - create a single output file: bundle.js
+        - write your code without reload your browser
+        - test (still missing)
+        
+
 Requirements
 
 - NodeJS >= v0.12.0
 - NPM >= v2.5.1
+
+
 
 #Intallation
 Once the required software is installed (NodeJS, NPM) run the command:

@@ -31,7 +31,7 @@ module.exports = {
 	devtool: 'source-map',
 	// add '.ts' to resolve.extensions array.
 	resolve: {
-		//when you require samthing in your code it search in this array
+		//when you require samething in your code it search in this array
 		root: [__dirname, 'app', bower_dir],
 		modulesDirectories: ['app', bower_dir],
 		extensions: ['', '.ts', '.js'],
