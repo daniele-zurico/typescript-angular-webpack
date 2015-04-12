@@ -13,7 +13,7 @@ This is a template application to get you up and running with a solid implementa
         - test (still missing)
         
 
-Requirements
+- Requirements
 
 - NodeJS >= v0.12.0
 - NPM >= v2.5.1
