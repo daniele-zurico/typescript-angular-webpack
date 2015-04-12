@@ -8,7 +8,6 @@ This is a template application to get you up and running with a solid implementa
         - typescript with webpack and angular
         - annotation: require your dependencies without write complete path: 
             - app/src/modules/entry/Controller.ts -> entry.Controller
-        - create a single output file: bundle.js
         - write your code without reload your browser
         - test (still missing)
         - the compiled output has 2 files:
