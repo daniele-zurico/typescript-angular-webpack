@@ -41,7 +41,7 @@ module.exports = {
 	module: {
 		noParse: [ ],
 		loaders: [
-			{test: /[\/\\]angular.min\.js$/, loader: "exports?angular"},
+			{test: /[\/\\]angular\.js$/, loader: "exports?angular"},
 			{ test: /\.ts$/, loader: 'typescript-loader'},     //add typescript support
 			{ test: /\.css$/,    loader: "style-loader!css-loader" }
 		]
@@ -58,7 +58,7 @@ module.exports = {
 	watch:true
 };
 
-module.exports.addVendor('angular', bower_dir + '/angular/angular.min.js');
+module.exports.addVendor('angular', bower_dir + '/angular/angular.js');
 
 /**
  * THIS IS FOR ANNOTATION:
