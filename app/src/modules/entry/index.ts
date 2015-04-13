@@ -7,6 +7,6 @@ var Controller = require("entry.Controller");
 
 angular
     .module('app', [])
-    .factory('service', ()=> {return new Service()})
+    .factory('service', ()=> new Service())
     .controller(Controller);
 
