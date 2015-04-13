@@ -1,14 +1,17 @@
 /**
  * Created by danielezurico on 12/04/15.
  */
-
 import Person = require("./Person");
+
 
 export class Greeter extends Person{
     greeting:string;
+    service;
+    location;
 
-    constructor() {
+    constructor(service) {
         this.greeting = "From the controller as TypeScript 1";
+        this.service = service;
         super();
     }
 
@@ -22,4 +25,3 @@ export class Greeter extends Person{
         return this.greeting = "hello2";
     }
 };
-
