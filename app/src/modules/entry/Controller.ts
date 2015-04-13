@@ -11,6 +11,8 @@ export class Greeter extends Person{
 
     constructor(service) {
         this.greeting = "From the controller as TypeScript 1";
+        this.service = service;
+        console.log(this.service);
         super();
     }
 
