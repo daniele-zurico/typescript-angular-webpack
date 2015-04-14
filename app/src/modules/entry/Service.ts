@@ -4,23 +4,16 @@
 //
 class UserService{
     resource;
+    user;
 
-    constructor(){
-        console.log("hello");
+    constructor($resource){
+        this.resource = $resource;
+        this.user = this.resource("/portal/users", {});
     }
 
-    //this.users = this.resource("/portal/users", {}, {
-//    //    '$getAll': {
-//    //        method: 'GET',
-//    //        isArray: true,
-//    //        cache: false
-//    //        },
-//    //    '$getUser': {
-//    //        method: 'GET',
-//    //        url:"/portal/users/:uid/user",
-//    //        params: {auid: '@aid'}
-//    //    }
-//    //})
+    allUsers() {
+        return this.user.query().$promise;
+    }
 };
 
 export = UserService;

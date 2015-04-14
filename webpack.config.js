@@ -18,7 +18,9 @@ module.exports = {
 		app: "./src/modules/entry/index.ts",
 		//we create a vendor file that contains all the vendor in this array
 		vendor: [
-			'angular'
+			'angular',
+			'ngResource',
+			'ngMockE2E'
 		]
 	},
 	//output produced
@@ -59,7 +61,8 @@ module.exports = {
 };
 
 module.exports.addVendor('angular', bower_dir + '/angular/angular.js');
-
+module.exports.addVendor('ngResource', bower_dir + '/angular-resource/angular-resource.min.js');
+module.exports.addVendor('ngMockE2E', bower_dir + '/angular-mocks/angular-mocks.js');
 /**
  * THIS IS FOR ANNOTATION:
  * EXAMPLE: entry.Controller
