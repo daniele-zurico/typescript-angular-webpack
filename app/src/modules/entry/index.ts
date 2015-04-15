@@ -5,7 +5,7 @@ var angular = require('angular');
 var Service = require("entry.Service");
 var Controller = require("entry.Controller");
 
-import mock = require("../../../../test/mock/User-mock");
+import mock = require("../../../../test/mock/Mocks");
 
 angular
     .module('app', ['ngMockE2E','ngResource', 'restangular'])
