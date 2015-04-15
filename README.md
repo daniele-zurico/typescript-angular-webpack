@@ -9,7 +9,11 @@ This is a template application to get you up and running with a solid implementa
         - annotation: require your dependencies without write complete path: 
             - app/src/modules/entry/Controller.ts -> entry.Controller
         - write your code without reload your browser
+        - mock server
+        - gulp
         - test (still missing)
+        - generate documentation (still missing)
+        
         - the compiled output has 2 files:
             - dist/bundle.js --> our code
             - vendor.bundle.js --> angular code and other dependencies
@@ -33,10 +37,10 @@ All your modules must be created inside the folder app/modules (i.e. app/modules
 
 
 #Starts a basic WebServer
-- npm start
+- gulp
 
 - The main advantage is that you can write the code in your editor and see the changes in your browser without reload it. Open your browser (I've tested with chrome) at the following address:
     - http://localhost:8090/webpack-dev-server/app/src/index.html 
          
-- otherwise:
+- otherwise (not still ready for the production environment need same other configuration):
     - http://localhost:8090/app/src/index.html

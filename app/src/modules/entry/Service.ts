@@ -3,21 +3,13 @@
 // */
 //
 class UserService{
-    resource;
-    user;
-    http;
     restangular;
 
-    constructor($resource, $http, Restangular){
-        this.resource = $resource;
-        this.http = $http;
+    constructor(Restangular){
         this.restangular = Restangular;
-        this.user = this.resource("/portal/users", {});
     }
 
-    allUsers() {
-        //return this.user.query().$promise;
-        //return this.http.get('/portal/users');
+    get users() {
         return this.restangular.all('/portal/users').getList();
     }
 };
