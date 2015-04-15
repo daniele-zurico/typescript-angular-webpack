@@ -26,8 +26,8 @@ export class Greeter extends Person{
     }
 
     public hello3(){
-        this.service.allUsers().then(function(data){
-            console.log (data);
+        this.service.allUsers().then(function(resp){
+            console.log (resp[0].name);
         });
     }
 };

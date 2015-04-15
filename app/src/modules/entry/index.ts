@@ -4,14 +4,14 @@
 var angular = require('angular');
 var Service = require("entry.Service");
 var Controller = require("entry.Controller");
-var phones = [{name: 'phone1'}, {name: 'phone2'}];
+var colors = [{ "id" : 0, "name" : "red"},
+    { "id" : 1, "name" : "green"},
+    { "id" : 2, "name" : "blue"}
+];
 angular
-    .module('app', ['ngMockE2E','ngResource'])
+    .module('app', ['ngMockE2E','ngResource', 'restangular'])
     .service('service', Service)
     .controller(Controller)
     .run(function($httpBackend) {
-
-
-        $httpBackend.whenGET('/portal/users').respond(phones)
-
+        $httpBackend.whenGET('/portal/users').respond(200, colors);
     });

@@ -5,14 +5,20 @@
 class UserService{
     resource;
     user;
+    http;
+    restangular;
 
-    constructor($resource){
+    constructor($resource, $http, Restangular){
         this.resource = $resource;
+        this.http = $http;
+        this.restangular = Restangular;
         this.user = this.resource("/portal/users", {});
     }
 
     allUsers() {
-        return this.user.query().$promise;
+        //return this.user.query().$promise;
+        //return this.http.get('/portal/users');
+        return this.restangular.all('/portal/users').getList();
     }
 };
 

@@ -20,6 +20,8 @@ module.exports = {
 		vendor: [
 			'angular',
 			'ngResource',
+			'underscore',
+			'restangular',
 			'ngMockE2E'
 		]
 	},
@@ -44,6 +46,7 @@ module.exports = {
 		noParse: [ ],
 		loaders: [
 			{test: /[\/\\]angular\.js$/, loader: "exports?angular"},
+			{test: /restangular\/js\//, loader: 'exports?restangular'},
 			{ test: /\.ts$/, loader: 'typescript-loader'},     //add typescript support
 			{ test: /\.css$/,    loader: "style-loader!css-loader" }
 		]
@@ -55,13 +58,20 @@ module.exports = {
 		new ComponentResolverPlugin(['js','ts']),                               //when you require the library inside the code you don't need to set the extension
 		new webpack.ResolverPlugin([
 			new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin("bower.json", ["main"])
-		], ["normal", "loader"])                                                // plugin read from bower compatible with webpack
+		], ["normal", "loader"]),                                               // plugin read from bower compatible with webpack
+		new webpack.ProvidePlugin({
+			"windows._": "underscore",
+			"_": "underscore"
+		})
+
 	],
 	watch:true
 };
 
 module.exports.addVendor('angular', bower_dir + '/angular/angular.js');
 module.exports.addVendor('ngResource', bower_dir + '/angular-resource/angular-resource.min.js');
+module.exports.addVendor('underscore', bower_dir + '/underscore/underscore.js');
+module.exports.addVendor('restangular', bower_dir + '/restangular/dist/restangular.js');
 module.exports.addVendor('ngMockE2E', bower_dir + '/angular-mocks/angular-mocks.js');
 /**
  * THIS IS FOR ANNOTATION:
