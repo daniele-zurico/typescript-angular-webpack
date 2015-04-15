@@ -4,14 +4,12 @@
 var angular = require('angular');
 var Service = require("entry.Service");
 var Controller = require("entry.Controller");
-var colors = [{ "id" : 0, "name" : "red"},
-    { "id" : 1, "name" : "green"},
-    { "id" : 2, "name" : "blue"}
-];
+
+import mock = require("../../../../test/mock/User-mock");
+
 angular
     .module('app', ['ngMockE2E','ngResource', 'restangular'])
     .service('service', Service)
     .controller(Controller)
-    .run(function($httpBackend) {
-        $httpBackend.whenGET('/portal/users').respond(200, colors);
-    });
+    .run(mock);
+

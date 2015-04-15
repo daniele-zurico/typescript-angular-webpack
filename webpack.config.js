@@ -1,7 +1,6 @@
 /**
  * Created by danielezurico on 12/04/15.
  */
-
 var webpack = require("webpack");
 var path = require("path");
 var ComponentResolverPlugin = require('component-resolver-webpack');
