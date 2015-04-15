@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/daniele-zurico/typescript-angular-webpack",
   "devDependencies": {
+    "canonical-path": "0.0.2",
     "component-resolver-webpack": "^0.3.0",
     "exports-loader": "^0.6.2",
     "gulp": "^3.8.11",

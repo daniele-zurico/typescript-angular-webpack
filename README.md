@@ -12,7 +12,7 @@ This is a template application to get you up and running with a solid implementa
         - mock server
         - gulp
         - test (still missing)
-        - generate documentation (still missing)
+        - generate documentation (still missing - there's no good tool that works with webpack and typescript.)
         
         - the compiled output has 2 files:
             - dist/bundle.js --> our code
