@@ -5,11 +5,7 @@ var angular = require('angular');
 var Service = require("entry.Service");
 var Controller = require("entry.Controller");
 
-import mock = require("../../../../test/mock/Mocks");
-
 angular
-    .module('app', ['ngMockE2E','ngResource', 'restangular'])
+    .module('app', ['ngResource', 'restangular'])
     .service('service', Service)
-    .controller(Controller)
-    .run(mock);
-
+    .controller(Controller);

@@ -5,12 +5,7 @@
 <body ng-app="app">
 <script src="../../vendor.bundle.js"></script>
 <script type="text/javascript" src="../../dist/bundle.js" charset="utf-8"></script>
-<script>
-	angular.$inject = ['ngMockE2E'];
-	//mock = initMocks(angular.$httpBackend);
-	//app.module.run(mock);
-</script>
-
+<script type="text/javascript" src="../../test/mock/mocks.js"></script>
 thanks to you dear
 <div ng-controller="Greeter as great">
 	{{great.greeting}}
@@ -18,6 +13,5 @@ thanks to you dear
 	<div ng-click="great.hello2()">PUBLIC CLICK</div>
 	<div ng-click="great.hello3()">GET USERS</div>
 </div>
-
 </body>
 </html>
